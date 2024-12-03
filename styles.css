@@ -1,0 +1,248 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #6a1b9a, #8e24aa);
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 1rem;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* About */
+.profile-pic {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+/* Skills */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.skill-box {
+    text-align: center;
+    background:#D3D3D3;
+    padding: 1.5rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skill-box i {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    color: #6a1b9a;
+}
+
+/* Footer */
+footer {
+    background: gray;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+
+.footer-column {
+    flex: 3;
+    min-width: 150px;
+    text-align: centre;
+}
+
+.footer-column h3 {
+    margin-bottom: 0.5rem;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.social-icons a:hover {
+    color: #ff4081;
+}
+
+
+/* Contact Section */
+#contact {
+    background: #f9f9f9;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+#contact h2 {
+    color: #6a1b9a;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+#contact form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+#contact form input,
+#contact form textarea {
+    width: 90%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+}
+
+#contact form input:focus,
+#contact form textarea:focus {
+    border-color: #6a1b9a;
+    outline: none;
+}
+
+#contact form button {
+    background: #6a1b9a;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#contact form button:hover {
+    background: #8e24aa;
+}
+#text-animator {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-top: 2rem;
+    height: 50px; /* Fixed height to avoid layout shifting */
+    overflow: hidden;
+}
+
+/* Animated Text */
+.multiple-text {
+    display: inline-block;
+    animation: color-change 2s linear infinite;
+}
+
+/* Define the color-change animation */
+@keyframes color-change {
+    0% { color: red; }
+    25% { color: blue; }
+    50% { color: green; }
+    75% { color: orange; }
+    100% { color: red; }
+}
+/* Text Animator Container 
+#text-animator {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-top: 2rem;
+    height: 50px; /* Fixed height to avoid layout shifting */
+    overflow: hidden;
+}
+
+/* Animated Text */
+.multiple-text {
+    display: inline-block;
+    animation: color-change 2s infinite;
+}
+
+/* Keyframe Animation for Color Change */
+@keyframes color-change {
+    0% { color: #6a1b9a; } /* Purple */
+    25% { color: #8e24aa; } /* Light Purple */
+    50% { color: #ff4081; } /* Pink */
+    75% { color: #4caf50; } /* Green */
+    100% { color: #6a1b9a; } /* Purple */
+}*/
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #contact h2 {
+        font-size: 1.8rem;
+    }
+.skills-grid {
+        grid-template-columns: 1fr;}
+    #contact form {
+        padding: 1.5rem;
+    }
+
+    #contact form input,
+    #contact form textarea {
+        font-size: 0.9rem;
+    }
+
+    #contact form button {
+        font-size: 0.9rem;
+    }
+}
