@@ -1,4 +1,13 @@
+const visitorCountElement = document.getElementById('visitor-count');
 
+
+let visitorCount = localStorage.getItem('visitorCount') || 0;
+
+
+visitorCount++;
+localStorage.setItem('visitorCount', visitorCount);
+
+visitorCountElement.textContent = `Visitors: ${visitorCount}`;
    /* let typed = new Typed('.multiple-text',{
       strings:['Web Developer.','Software Engineer.','Editor.','Code Lover.','DSA Lover.'],
 typeSpeed:70,
