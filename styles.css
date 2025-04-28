@@ -84,6 +84,11 @@ footer {
     text-align: center;
     padding: 1rem 0;
 }
+#visitor-count {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
 
 .footer-container {
     display: flex;
