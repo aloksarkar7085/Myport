@@ -30,3 +30,18 @@ let typed = new Typed('.multiple-text', {
     backDelay: 1000,
     loop: true,
 });
+const x=document.getElementById('man');
+const b=document.querySelector('.m');
+const c= document.querySelector('.n');
+function openMenu(){
+    x.style.display='block';
+    b.style.display='none';
+    c.style.display='block';
+}
+function closeMenu(){
+    x.style.display='none';
+    b.style.display='block';
+    c.style.display='none';
+}
+
+
