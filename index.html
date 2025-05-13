@@ -8,19 +8,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>
+    <header><p>AS<span>TECH</span></p>
         <div class="container">
-            <h1>Alok Sarkar</h1>
-<div id="text-animator">
-    I am a <span class="multiple-text"></span>
-</div>
+          
            
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+            <nav >
+                <ion-icons class="m" name="menu-outline"   onclick="openMenu()">&#9776</ion-icons>
+                <ion-icons class="n" name="close-outline"  onclick="closeMenu()">&#9747</ion-icons>
+                
+                <ul id="man" >
+                    <li><a class="link" href="#about">About</a></li>
+                    <li><a class="link" href="#skills">Skills</a></li>
+                    <li><a class="link" href="#projects">Projects</a></li>
+                    <li><a class="link" href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -29,7 +29,9 @@
     <section id="about">
         <div class="container">
             <img src="myimage.jpg" alt="Alok Sarkar" class="profile-pic">
-            <h2>About Me</h2>
+            <div id="text-animator">
+                I am a <span class="multiple-text"></span>
+            </div> <h2>About Me</h2>
             <p>I am a passionate web developer with expertise in modern web technologies. I love building beautiful and functional websites.</p>
         </div>
     </section>
@@ -107,11 +109,10 @@
    <a href="https://github.com/aloksarkar7085" target="_blank"><i class="fab fa-github"></i></a>                
   <a href="https://wa.me/qr/UGKJWJTE4U4KN1"><i class="fab fa-whatsapp"></i></a>
                     <a href="https://www.linkedin.com/in/alok-sarkar-5a7080229?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://www.instagram.com/aloksarkar21n/profilecard/?igsh=MThwMGZ3NnZkajNlaA=="><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/alok-sarkar-5a7080229?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
-        </div>
-        <div id="visitor-count"></div>
+        </div><div class="line"></div>
         <p>&copy; 2024 Alok Sarkar. All Rights Reserved.</p>
     </footer>
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
