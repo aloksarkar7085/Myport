@@ -24,12 +24,21 @@ loop:true,
     loop: true,
 });*/
 let typed = new Typed('.multiple-text', {
-    strings: ['SAP ABAP DEV.', 'Web Developer.', 'Software Engineer.', 'Editor.', 'Code Lover.', 'DSA Lover.'],
+    strings: ['SAP ABAP DEV.','Web Developer.', 'Software Engineer.', 'Editor.', 'Code Lover.', 'DSA Lover.'],
     typeSpeed: 70,
     backSpeed: 70,
     backDelay: 1000,
     loop: true,
 });
+
+
+/*let typed = new Typed('.multiple-text', {
+    strings: ['SAP ABAP DEV.', 'Web Developer.', 'Software Engineer.', 'Editor.', 'Code Lover.', 'DSA Lover.'],
+    typeSpeed: 70,
+    backSpeed: 70,
+    backDelay: 1000,
+    loop: true,
+});*/
 const x=document.getElementById('man');
 const b=document.querySelector('.m');
 const c= document.querySelector('.n');
