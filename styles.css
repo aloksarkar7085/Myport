@@ -262,7 +262,7 @@ background: linear-gradient(60deg,rgb(247, 242, 242),rgb(227, 252, 6));
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 750px) {
     ul{
         position: relative;
         width: 100%;
