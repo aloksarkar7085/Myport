@@ -260,68 +260,61 @@ background: linear-gradient(60deg,rgb(247, 242, 242),rgb(227, 252, 6));
     display:none;
     float:right ;
 }
-
 @media (max-width: 750px) {
-    ul {
-        position: relative;
-        width: 100%;
-        height: auto;
-        background: #da1d1d;
-        display: none; /* Typically toggled with JS or a class */
-        padding-left: 0;
-        margin: 0;
-    }
+ul{
+position: relative;
+width: 100%;
+height: 25vh;
+background: #da1d1d;
+bottom:10%;
 
-    ul li {
-        display: block;
-        margin: 10px 20px;
-    }
-
-    .m {
-        position: relative;
-        width: 100%;
-        text-align: center;
-        margin-top: 1rem;
-    }
-
-    #man {
-        width: 100%;
-        background: #2c0d4b;
-        position: relative;
-        top: 100px;
-        right: 0;
-        padding: 1rem;
-    }
-
-    #contact h2 {
-        font-size: 1.8rem;
-        text-align: center;
-    }
-
-    .skills-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
-
-    #contact form {
-        padding: 1.5rem;
-    }
-
-    #contact form input,
-    #contact form textarea {
-        font-size: 0.9rem;
-        width: 100%;
-        margin-bottom: 1rem;
-    }
-
-    #contact form button {
-        font-size: 0.9rem;
-        width: 100%;
-    }
-
-    footer p {
-        padding-left: 1.5rem;
-        text-align: center;
-    }
+display:none ;  
+   margin-left: 40px;  
+}  
+.m{  
+    position:relative;  
+    float: left;  
+    left: 40%;  
+    top: 0.5rem;  
+    width: 100%;  
+    display: block;  
+      
+      
+}  
+ul li {  
+   display:block;   
+   margin: 20px;  
+}  
+#man{  
+    width: 100%;  
+    background: #2c0d4b;  
+    position: absolute;  
+    top: 100px;  
+    right: 0;  
+}  
+#contact h2 {  
+    font-size: 1.8rem;  
 }
+
+.skills-grid {
+grid-template-columns: 1fr;}
+#contact form {
+padding: 1.5rem;
+}
+
+#contact form input,  
+#contact form textarea {  
+    font-size: 0.9rem;  
+}
+
+footer p{
+
+padding-left: 1.5rem;
+
+}
+#contact form button {
+font-size: 0.9rem;
+}
+} 
+
+
